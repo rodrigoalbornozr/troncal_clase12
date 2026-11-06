@@ -414,7 +414,7 @@
 
             <h4>Chile en América</h4>
 
-            <p>El continente americano reúne 322 de las 1.504 instituciones consideradas en el ranking. Su distribución por país es la siguiente:</p>
+            <p>El continente americano reúne 332 de las 1.504 instituciones consideradas en el ranking. Su distribución por país es la siguiente:</p>
 
             <canvas id="identidad"></canvas>
 
@@ -454,14 +454,14 @@
                     </tr>
                     <tr>
                         <th scope="row">655</th>
-                        <td>Universidad de Concepción</td>
-                        <td>❌</td>
+                        <td>Universidad Adolfo Ibáñez (<abbr>UAI</abbr>)</td>
+                        <td>✅</td>
                         <td>❌</td>
                     </tr>
                     <tr>
                         <th scope="row">662</th>
-                        <td>Universidad Adolfo Ibáñez (<abbr>UAI</abbr>)</td>
-                        <td>✅</td>
+                        <td>Universidad de Concepción</td>
+                        <td>❌</td>
                         <td>❌</td>
                     </tr>
                     <tr>
@@ -641,7 +641,7 @@
             </p>
 
             <h4>América</h4>
-            <p>Escuelas de Arte y Diseño de países americanos entre las 100 mejores.</p>
+            <p>Escuelas de Arte y Diseño de países americanos entre las 100 mejores. Se agregan al final de la lista dos instituciones chilenas que figuran en el ranking, sin estar entre las 100 mejores.</p>
             <table>
                 <thead>
                     <tr>
@@ -758,11 +758,31 @@
             new Chart(document.getElementById("identidad"), {
                 type: "bar",
                 data: {
-                    labels: ["Estados Unidos", "Canadá", "Brasil", "México", "Chile", "Otros países de América"],
+                    labels: [
+                        "Estados Unidos",
+                        "Canadá",
+                        "Brasil",
+                        "México",
+                        "Chile",
+                        "Argentina",
+                        "Colombia",
+                        "Perú",
+                        "Ecuador",
+                        "Uruguay",
+                        "Venezuela",
+                        "Costa Rica",
+                        "Cuba",
+                        "Guatemala",
+                        "República Dominicana",
+                        "Puerto Rico",
+                        "Paraguay",
+                        "Honduras",
+                        "Panamá",
+                    ],
                     datasets: [
                         {
                             label: "Instituciones en el QS World University Rankings",
-                            data: [184, 30, 22, 18, 17, 51],
+                            data: [184, 30, 22, 18, 17, 16, 12, 6, 6, 4, 4, 3, 2, 2, 2, 1, 1, 1, 1],
                             backgroundColor: "rgb(214, 214, 214)",
                             borderWidth: 1,
                         },
@@ -772,7 +792,7 @@
                     indexAxis: "y",
                     responsive: true,
                     maintainAspectRatio: true,
-                    aspectRatio: 2,
+                    aspectRatio: 1,
                 },
             });
         </script>
